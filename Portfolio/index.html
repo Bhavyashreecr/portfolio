@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!--navbar section-->
+  <script src="portfolio.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bhavyashree.C.R</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ab">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pr">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skill">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <!--banner section-->
+  <div class="container-fluid">
+    <div id="photo">
+      <img src="/images/bhavya1.jpg" id="pic">
+    </div>
+    <div class="banner">
+      <h1>Hello, I am <strong id="color">Bhavyashree.C.R</strong></h1>
+      <h2 onmousemove="myFunction(this, 'blue')" onmouseout="myFunction1(this, 'black')">I'm a Full-stack Java Developer</h2>
+      <a onmouseover ="myFunc(this, 'green')" onmouseout="myFunc2(this, 'blue')" href="#ab" id="button" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View Profile</a>
+      
+    </div>
+  </div>
+
+  <!--About section-->
+  <h1 id="ab">About</h1>
+
+  <section class="profile" id="aboutme">
+    
+    
+    <div class="about">
+      
+      <p class="para" style="font-size: 24px; font-weight: 500px;">I am a Electronics and Communication Engineering graduate. Currently, a student under Generation India's Junior
+        Full Stack Java Developer program in Rooman Technologies, learning new skills.<span id="dots">....</span>
+      <span id="morePara">The hands-on learning experience in HTML, CSS, JavaScript, and GitHub. Looking for an entry-level job in IT to improve skills and build my
+        career.</span></p>
+        <button onClick="readFunc()" id="read-more-btn">Read more</button>
+
+    </div>
+  
+  </section>
+
+  <!--projects section-->
+  <h1 id="pr">Projects</h1>
+  <section id="section1">
+    <div class="container-fluid">
+      <div class="card mx-4 my-4" style="width: 25rem;">
+        <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" class="card-img-top" src="/images/colmar.jpg" alt="Colmar">
+        <div class="card-body">
+          <h5 class="card-title">Basics</h5>
+          <p class="card-text">Successfully completed basics of HTML and CSS modules on codecademy along with Colmar
+            Academy project. </p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+      </div>
+      <div class="card mx-1 my-4" style="width: 24rem;">
+        <img id="img2" onmouseover="setNewImage1()" onmouseout="setOldImage1()" class="card-img-top" src="/images/toys.jpg" alt="Toys">
+        <div class="card-body">
+          <h5 class="card-title">Intermediate</h5>
+          <p class="card-text">Designed a website using concepts of HTML, CSS and Bootstrap with few customizations to
+            the Bootstrap class. </p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+      </div>
+      <div class="card mx-4 my-4" style="width: 25rem;">
+        <img id="img3" onmouseover="setNewImage2()" onmouseout="setOldImage2()" class="card-img-top" src="/images/chore.jpg" alt="chore">
+        <div class="card-body">
+          <h5 class="card-title">Advanced</h5>
+          <p class="card-text">Completed Javascript module on codecademy including a project chore door with HTML, CSS
+            and Javascript. </p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--skills section-->
+  <h1 id="skill">Skills</h1>
+  <section id="sk">
+    <div class="row">
+      <div id="display">
+        <img class="img1 mx-2" src="/images/html111.jpg">
+        <p id="html">HTML</p>
+      </div>
+      <div id="display1">
+        <img class="img2 mx-2" src="/images/html11.jpg">
+        <p id="css">CSS</p>
+      </div>
+      <div id="display2">
+        <img class="img3 mx-2" src="/images/bs11.jpg">
+        <p id="bs">BootStrap</p>
+      </div>
+      <div id="display3">
+        <img class="img4 mx-2" src="images/js11.jpg">
+        <p id="js">JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Education  Section-->
+
+  <h1 id="education">Education</h1>
+  <section id="ed">
+    <div class="edu">
+      <div id="gra">
+        <h3>Graduation</h3>
+        <h5>Bachelor of Engineering in Electronics and Communication</h5>
+        <p>Pursued Engineering in East point college of engineering for women, Bangalore affiliated from visvesvaraya
+          technological university, Belgaum.</p>
+      </div>
+      <div id="pu">
+        <h3>Pre-University</h3>
+
+        <p>Completed pre-university education in Government PU college, Malur in PCMB stream.</p>
+      </div>
+      <div id="sslc">
+        <h3>Secondary-Education</h3>
+
+        <p>Done schooling in Government PU college for boys, Malur</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Contact section-->
+  <h1 id="contact">Contact</h1>
+  
+    <div class="address">
+    <div class="icon">
+      <i class="bi bi-envelope-fill"></i>
+      <strong><span style="font-size: 20px;">Email-Id: </span><u>bhavyashreecr2013@gmail.com</u></strong>
+    </div>
+    <div class="icon">
+        <i class="bi bi-phone-fill"></i>
+        <strong><span style="font-size: 20px;">Phone: </span><u>6361535040</u></strong>
+    </div>
+    <div class="icon">
+          <i class="bi bi-geo-alt-fill"></i>
+          <strong><span style="font-size: 20px;">Address: </span><u>Jangamakote, sidlaghatta taluk, chikkaballapura, 562102</u></strong>
+    </div>
+    <div class="group">
+      <a href="https://www.facebook.com/bhavya.shreecr" class="group-item"><i class="fa fa-facebook fa"></i></a>
+      <a href="https://www.instagram.com/bhavyashreesudarshan/" class="group-item"><i class="fa fa-instagram fa-fw"></i></a>
+      <a href="https://www.linkedin.com/in/bhavyashree-c-r-8b3392229/" class="group-item"><i class="fa fa-linkedin fa-fw"></i></a>
+    </div>
+  </div>
+  
+
+
+  <footer>
+    <div className="header_buttons" class="resume">
+      <a onClick="change()" id="download" href="./images/Resume_Bhavyashree_BE recent.docx" className="btn btn-outline" download class="btn btn-outline btn-primary">Download Resume
+      </a>
+  </div>
+
+    <p class="copy">&copy; Copyright 2022</p>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+  <script src="java.js"></script>
+</body>
+
+</html>
